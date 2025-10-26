@@ -1,0 +1,70 @@
+.Myservices{
+font-family: 'Montserrat';
+ padding-top: 5vw;
+    padding-left: 4vw;
+}
+
+.servicetitle{
+ color:#ED3038;
+   
+   font-size: 1vw;
+}
+.whatido{
+   font-size: 2vw;
+   font-weight: 600;
+}
+.servicesheading{
+    display: flex;
+    flex-direction:column;
+    gap: 5px;
+}
+.Services{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 2vw;
+}
+.service1{
+    width: 22vw;
+    height: 17vw;
+    border-radius: 15px;
+    background: linear-gradient(to bottom,#fcb4b9,rgb(255, 209, 209),white);
+    box-shadow: 5px 5px 15px gray;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.serviceimages{
+   width: 3vw;
+   height: 3vw;
+   padding: 1vw;
+}
+.serviceName{
+   font-size: 1.3vw;
+font-weight: 600;
+/* font-family: 'Montserrat'; */
+}
+.servicedetail{
+   font-size:1vw;
+   padding: 1vw;
+   color: rgb(44, 42, 42);
+   align-items: center;
+   justify-self: center;
+}
+@media(max-width:480px){
+ 
+
+.Services{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 2vw;
+}
+
+.serviceimages{
+   /* width: 25px;
+   height: 25px; */
+   padding: 1vw;
+}
+
+
+}

@@ -1,10 +1,10 @@
 .hero{
     padding-top: 10vw;
-    padding-left: 30px;
+    padding-left: 4vw;
     display: flex;
     width:90vw;
     height: 30vw;
-    
+    font-family: 'Montserrat';
 }
 
 .introduction{
@@ -15,55 +15,76 @@
 }
 .heroimagediv {
      flex: 1;
-     padding-left: 3%;
+     padding-left: 3vw;
       justify-content: center;
   align-items: center;
  }
 .explanation{
 font-weight:lighter;
-font-size: smaller;
+font-size: 1vw;
 
 }
 .welcome{
-    font-size: smaller;
+    font-size: 1vw;
 }
 .introduction h2{
-    margin-top: 10px;
+    margin-top: 1vw;
 }
 
 .heroimagediv img{
     
-    width: 35vw;
-    height: 20vw;
-    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 22%;
+    border-radius: 39px;
     flex-shrink: 1;
+    border-left: 4px #ED3038 solid;
+     border-bottom: 4px #ED3038 solid;
+  /* box-shadow: -6px 6px 15px #ED3038; */
 }
+
+.Hireme,.DownloadCV{
+width:10vw;
+padding: 0.5vw;
+border-radius: 0.5vw;
+font-weight: bold;
+ box-shadow: 5px 5px 10px gray;
+ font-size: 1vw;
+
+}
+.Hireme{
+    color: #FFFFFF;
+    background-color: #ED3038;
+    border:none;
+}
+.DownloadCV{
+    border: #A89F9F solid 1px;
+    background-color:#FFFFFF ;
+}
+.Herobuttons{
+    display: flex;
+    margin:4vw;
+    gap: 2vw;
+    justify-content: center;
+   
+}
+.Iammathan{
+    font-size: 2vw;
+}
+
 @media(max-width:480px){
 .hero{
     padding-top:15vw;
     padding-left: 5vw;
 }
 
-.introduction{
- font-family: 'Montserrat';
-  
 
-}
-
-
-.explanation{
-font-weight: 100;
-font-size: 5px;
-opacity: 0.6;
-display: flex;
-}
-.welcome{
-    font-size: 5px;
-}
-.introduction h2{
-    margin-top: 5px;
-    font-size: x-small;
-
+.heroimagediv img{
+    
+    object-position: 0 22%;
+    border-radius: 18px;
+ 
 }
 
 }

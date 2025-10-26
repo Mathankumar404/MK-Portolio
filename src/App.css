@@ -1,0 +1,9 @@
+hr {
+  border: none;           /* remove default border */
+  height: 1px;            /* line thickness */
+  background-color:rgb(197, 191, 191) ; /* line color */
+  width: 90%;             /* line width */
+  margin-top: 3vw;      /* center it */
+  border-radius: 5px;     /* optional: rounded edges */
+}
+   

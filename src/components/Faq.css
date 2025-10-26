@@ -1,0 +1,105 @@
+.FaqSection{
+   font-family: 'Montserrat';
+   margin-top: 5vw;
+   margin-left: 4vw;
+}
+
+.faqtitle{
+     color:#ED3038;
+   
+   font-size: 1vw;
+}
+.faqsubtitle{
+   font-size: 2vw;
+   font-weight: 600;
+}
+.faqheadings{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.question{
+    list-style: none;
+    font-size: 1.2vw;
+    font-family: 'Montserrat';
+    padding: 1vw;
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    border: 1px solid gray;
+    border-radius:5px ;
+}
+.Faqboxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4vw;
+    padding: 3vw;
+}
+
+
+.questionsBox{
+    flex: 1.5;
+    
+}
+.plus{
+    font-size: 2vw;
+    font-weight: 300;
+    padding-left:2vw ;
+}
+.minus{
+    color:#ED3038;
+    font-size: 3vw;
+}
+.answers{
+font-size: 1vw;
+list-style: none;
+border: 1px solid gray;
+padding: 3vw;
+margin: 0;
+border-radius: 5px;
+}
+.faqMessagebox{
+    flex: 1;
+   
+}
+.messagediv{
+     width:30vw;
+    height:14vw;
+    border-radius: 0.5vw;
+    box-shadow: 5px 5px 15px gray;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw;
+    gap: 2vw;
+    
+    align-items: center;
+
+}
+.messageicon{
+    width: 3vw;
+    height: 3vw;
+    display: flex;
+  
+}
+.messagesubtitle{
+    font-size: 1.3vw;
+    font-weight: 500;
+}
+.sendMessage{
+    width: 9vw;
+    height: 1.9vw;
+    padding: 0.4vw;
+    border-radius: 5px;
+    border: none;
+    background-color: #ED3038;
+    color: rgb(255, 255, 255);
+    font-size: 1vw;
+    font-weight: 600;
+}
+.messagepara{
+    font-size: 1vw;
+    font-weight: 100;
+}

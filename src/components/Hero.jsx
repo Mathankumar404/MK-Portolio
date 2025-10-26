@@ -5,16 +5,31 @@ const Hero = () => {
     <div className='hero'>
         <div className='introduction'>
       <span className='welcome'>Welcome To My World</span>
-      <h2>HI I'M <span className='name'>MATHANKUMAR</span> A DEVELOPER</h2>
-      <p className='explanation'>Front-End Developer skilled in React.js, Next.js, HTML, CSS,
-         JavaScript, Tailwind CSS. Experienced in building responsive, 
-         user-friendly, and robust web applications with clean, efficient code.
-          Passionate about creating seamless user experiences and implementing modern 
-          front-end best practices.</p>
+      <h2 className="Iammathan">HI I'M <span className='name'>MATHANKUMAR</span> A DEVELOPER</h2>
+      <p className='explanation'>I am a Front-End Developer with strong expertise in 
+        React.js, Next.js, HTML, CSS, JavaScript, and Tailwind CSS. I specialize in developing
+         responsive, user-friendly, and high-performance web applications that deliver seamless
+          experiences across all devices.
+          </p>
+      <p className='explanation'>With a passion for modern web technologies and clean, 
+        maintainable code, I focus on translating design concepts into functional, 
+        visually appealing interfaces. I enjoy working with dynamic teams to implement 
+        best practices in UI/UX, optimize performance, and ensure scalability.
+</p>
+
+
+          <div className='Herobuttons'>
+            <button className='Hireme'>
+             Hire Me
+            </button>
+            <button className='DownloadCV'>
+              Download CV
+            </button>
+          </div>
       </div>
 
       <div className='heroimagediv'>
-        <img src="/images/Hero_image.png" alt="heroimage" />
+        <img src="/images/mathan.jpg" alt="heroimage" />
       </div>
     </div>
   )
