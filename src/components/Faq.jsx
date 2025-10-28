@@ -42,8 +42,8 @@ const handleplusminus=(i)=>{
        
       <motion.div className="questionsBox"
       
-        initial={{ opacity: 0, x: -200 }}
-        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, y: -200 }}
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}>
         <ul className="questionslist">
@@ -64,8 +64,8 @@ const handleplusminus=(i)=>{
       </motion.div>
 
       <motion.div className="faqMessagebox" 
-        initial={{ opacity: 0, x: 200 }}
-        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, y: 200 }}
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}>
          <div className="messagediv">

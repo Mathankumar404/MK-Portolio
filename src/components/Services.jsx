@@ -24,23 +24,24 @@ const Services = () => {
       </div>
       <br />
        {/* <div className="Services"> */}
-          <motion.div
+          <div
         className="Services"
-        initial={{ opacity: 0, y: 100 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
+        
       >
         {images.map((item,index)=>(
-           <div className="service1" key={index}>
+           <motion.div className="service1" key={index}
+           initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}>
                  <img src={`/images/${item}.png`} alt="service1" className="serviceimages"/>
                
                  <span className="serviceName">{item.replace("_"," ")}</span>
                  <p className="servicedetail">{explanation[item]}</p>
-           </div>
+           </motion.div>
            ))
 }
-      </motion.div>
+      </div>
     </div>
   )
 }

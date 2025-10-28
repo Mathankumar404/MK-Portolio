@@ -24,17 +24,18 @@ const handleContactDetails=(e)=>{
   });
 }
   return (
-    <div id='contact'>
+    <motion.div id='contact'
+     initial={{ opacity: 0, y: 200 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}>
       <div className='contactheadings'>
            <span className='contacttitle'>CONTACT</span>
            <span className='contactSubtitle'>Contact With Me</span>
       </div>
       <div className='contactContainer'>
-        <motion.div className='letstalkContanier' 
-          initial={{ opacity: 0, x: -200 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true }} >
+        <div className='letstalkContanier' 
+           >
               <span className='letstalk'>Let's Talk</span>
               <img src="/images/Let's_talk.png" alt="letstalk"className='letstalkimage' />
               <ul className='contactdetails'>
@@ -42,21 +43,18 @@ const handleContactDetails=(e)=>{
                 <li ><img src="/images/phone.png" alt="mail" />+91 9363376589</li>
                 <li ><img src="/images/location.png" alt="mail" />8/85 ,chekkadi street ,kuruvikulam-627754.</li>
               </ul>
-        </motion.div>
-        <motion.form  className='contactform' onSubmit={(e)=>handleContactDetails(e)}
+        </div>
+        <form  className='contactform' onSubmit={(e)=>handleContactDetails(e)}
           
-          initial={{ opacity: 0, x: 200 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true }}>
+         >
           <input type="text" placeholder='Full Name' name='Name'required/>
           <input type="text" placeholder='Email' name='Email'required/>
           <input type="text" placeholder='Subject' name="Subject" required/>
           <textarea name="Message" id="yourmessage"  placeholder='Your Message' required></textarea>
           <button className='sendmessagebtn' type='submit'>Send Message</button>
-       </motion.form>
+       </form>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

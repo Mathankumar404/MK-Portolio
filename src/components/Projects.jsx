@@ -15,18 +15,19 @@ const Projects = () => {
         <span className='visitmyportfolio'>Visit My Portfolio</span>
       </div>
 
-      <motion.div className='Myprojects'
-      initial={{ opacity: 0, y: 100 }}
+      <div className='Myprojects'
+      >
+        {projects.map((item,index)=>(
+        <motion.div className='Project' key={index}
+        initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}>
-        {projects.map((item,index)=>(
-        <div className='Project' key={index}>
           <img src={`/images/Projects/${projectImages[index]}.png`} alt={item}  className='projectimage'/>
              <span className='projectname'>{item}</span>
-        </div>
+        </motion.div>
 ))}
-      </motion.div>
+      </div>
     </div>
   )
 }

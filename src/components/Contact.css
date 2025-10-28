@@ -146,12 +146,13 @@ gap: 2vw;
     width: 30vw;
     height: 1.5vw;
     border-radius: 0.5vw;
-    font-size: 2vw;
+    font-size: 1.5vw;
     padding: 0.5vw;
 }
 .contactform textarea{
     font-size: 1.5vw;
     padding: 0.5vw;
+    border-radius:0.5vw;
 }
 .sendmessagebtn{
     font-size: 2vw;
