@@ -1,7 +1,7 @@
 #portfolio{
     font-family: 'Montserrat';
  padding-top:5vw;
-    
+ width: 100vw;
 }
 .portfolioheadings{
     display: flex;
@@ -68,4 +68,41 @@
     height:60%;
     border-radius: 0.3vw;
 
+}
+
+@media(max-width:480px){
+    .portfolioTitle{
+     font-size: 2vw;
+    }
+    .visitmyportfolio{
+        font-size: 4vw;
+    }
+    .Myprojects{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10vw;
+    margin-top: 4vw;
+    width: 90%;
+    
+}
+.Project{
+    width: 40vw;
+    height:30vw;
+    border-radius: 1vw;
+     
+}
+.projectname{
+    font-weight: 600;
+    font-size:2vw;
+    padding: 2vw;
+     padding-bottom: 0.5vw;
+   
+}
+.projectimage{
+
+    width:90%;
+    height:70%;
+    border-radius: 0.3vw;
+
+}
 }

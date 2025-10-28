@@ -46,17 +46,36 @@ padding-right: 5vw;
 }
 
 @media(max-width:480px){
+    #AboutMe{
+    width: 100vw;
+    height: 50vw;
+}
+
     .myimage img{
-        border-radius: 20px;
+        border-radius: 3vw;
           object-position: 0px 18%;
     } 
     .myimage{
     flex: 1;
     width:50vw;
-    height: 25vw;
+    height:45vw;
     padding: 4vw;
 
 } 
+.AboutContent{
+font-size: 2vw;
+    color: #333030;
 
+}
+.subtitle{
+   font-size: 4vw;
+   margin-top: 0;
+   margin-bottom: 0.5vw;
+}
+.abouttitle{
+   
+   
+   font-size: 2vw;
+}
 
 }

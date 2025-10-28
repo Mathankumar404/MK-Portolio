@@ -74,17 +74,45 @@ font-weight: bold;
 }
 
 @media(max-width:480px){
-.hero{
+#hero{
+     display: flex;
     padding-top:15vw;
-    padding-left: 5vw;
+    padding-left:5vw;
+    width:90vw;
+    height: 70vw;
+   
 }
-
-
 .heroimagediv img{
-    
-    object-position: 0 22%;
-    border-radius: 18px;
+object-position: 0 22%;
+border-radius: 18px;
  
+}
+.welcome{
+    font-size: 2vw;
+}
+.Iammathan{
+    font-size: 4vw;
+}
+.explanation{
+    font-size: 2vw;
+    color: #333030;
+}
+.Hireme,.DownloadCV{
+width:20vw;
+height: 5vw;
+padding: 0.5vw;
+border-radius: 0.8vw;
+font-weight: bold;
+ box-shadow: 5px 5px 10px gray;
+ font-size: 2vw;
+
+}
+.heroimagediv{
+    flex: 1;
+}
+.introduction{
+    flex:1;
+    width: 45vw;
 }
 
 }
