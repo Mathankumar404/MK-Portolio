@@ -98,7 +98,7 @@ border-radius: 5px;
     padding: 0.4vw;
     border-radius: 5px;
     border: none;
-    background-color: #ED3038;
+    background-color:#ED3038;
     color: rgb(255, 255, 255);
     font-size: 1vw;
     font-weight: 600;
@@ -106,4 +106,79 @@ border-radius: 5px;
 .messagepara{
     font-size: 1vw;
     font-weight: 100;
+}
+
+@media(max-width:480px){
+    .faqtitle{
+        font-size: 2vw;
+    }
+    .faqsubtitle{
+        font-size: 4vw;
+    }
+    #FaqSection{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .Faqboxes{
+        display: flex;
+   flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: 70%;
+    }
+    .questionsBox ul{
+        padding:0;
+    }
+
+   .answers{
+font-size: 1.7vw;
+
+padding: 3vw;
+/* width: 45vw; */
+height: 10vw;
+margin: 0;
+border-radius: 5px;
+}
+
+
+.faqMessagebox{
+width: 100%;
+padding: 2vw;
+height: auto;
+justify-content: center;
+align-items: center;
+display: flex;
+}
+.question{
+    font-size: 2vw;
+    height: 6vw;
+}
+.messagepara{
+    font-size: 2vw;
+  
+}
+.messagediv{
+     width:50vw;
+    height:25vw;
+
+}
+.messagesubtitle{
+    font-size: 2vw;
+}
+.messageicon{
+    width: 5vw;
+    height: 5vw;
+}
+.sendMessage{
+    width: 20vw;
+    height: 4vw;
+    padding: 1vw;
+    border-radius: 0.4vw;
+    
+    font-size: 2vw;
+   
+}
 }

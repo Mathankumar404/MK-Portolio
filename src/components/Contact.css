@@ -123,3 +123,40 @@ gap: 2vw;
   border-radius: 0.2vw;
   font-family: 'Montserrat';
 }
+
+@media(max-width:480px){
+    .contacttitle, .letstalk{
+        font-size: 2vw;
+    }
+    .contactSubtitle{
+        font-size: 4vw;
+    }
+    .contactdetails li{
+        font-size: 2vw;
+    }
+    .contactdetails img{
+        width: 4vw;
+        height: 4vw;
+    }
+  .letstalkimage{
+    width: 100%;
+    height: 50%;
+  }
+  .contactform input{
+    width: 30vw;
+    height: 1.5vw;
+    border-radius: 0.5vw;
+    font-size: 2vw;
+    padding: 0.5vw;
+}
+.contactform textarea{
+    font-size: 1.5vw;
+    padding: 0.5vw;
+}
+.sendmessagebtn{
+    font-size: 2vw;
+    padding: 1vw;
+    height: 4vw;
+   border-radius: 1vw;
+}
+}

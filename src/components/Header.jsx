@@ -68,7 +68,7 @@ ref={dropdownRef}
   <a href="#hero">  <li><i className="fas fa-home icon"></i> Home</li></a>
     <a href="#AboutMe"><li><i className="fas fa-user icon"></i> About me</li></a>
  <a href="#Myservices">  <li><i className="fas fa-briefcase icon"></i> Services</li></a>
-   {/* <a href="#"> <li><i className="fas fa-comment-dots icon"></i> Testimonials</li></a> */}
+   <a href="#FaqSection"> <li><i className="fas fa-comment-dots icon"></i> FAQ</li></a>
    <a href="#portfolio"> <li><i className="fas fa-image icon"></i> Portfolio</li></a>
    <a href="#contact"> <li><i className="fas fa-envelope icon"></i> Contact</li></a>
 

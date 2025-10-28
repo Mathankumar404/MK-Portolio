@@ -1,10 +1,10 @@
-hr {
-  border: none;           /* remove default border */
-  height: 1px;            /* line thickness */
-  background-color:rgb(197, 191, 191) ; /* line color */
-  width: 90%;             /* line width */
-  margin-top: 3vw;      /* center it */
-  border-radius: 5px;     /* optional: rounded edges */
+hr{
+  border: none;          
+  height: 1px;           
+  background-color:rgb(197, 191, 191) ; 
+  width: 90%;            
+  margin-top: 3vw;      
+  border-radius: 5px;    
 }
    
 div{
@@ -21,4 +21,14 @@ div{
   -webkit-user-select: none; /* Safari */
   -moz-user-select: none;    /* Firefox */
   -ms-user-select: none;     /* IE10+ */
+}
+
+@media(max-width:480px){
+  hr {
+         
+  height: 0.1px;           
+  width: 90%;            
+  margin-top: 3vw;     
+  border-radius: 5px;     
+}
 }
