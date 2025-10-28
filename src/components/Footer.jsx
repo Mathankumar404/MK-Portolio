@@ -4,10 +4,10 @@ const Footer = () => {
   return (
     <div className='footer'>
       <div className='footer-images'>
-        <img src="/images/facebook.png" alt="facebook" />
-        <img src="/images/github.png" alt="github" />
-        <img src="/images/linkedin.png" alt="linkedin" />
-        <img src="/images/twitter.png" alt="X" />
+        <a href=""><img src="/images/facebook.png" alt="facebook" /></a>
+       <a href="https://github.com/Mathankumar404" target='_blank'> <img src="/images/github.png" alt="github" /></a>
+       <a href="https://www.linkedin.com/in/mathankumar-p-000439290" target='_blank'> <img src="/images/linkedin.png" alt="linkedin" /></a>
+       <a href=""><img src="/images/twitter.png" alt="X" /></a> 
       </div>
 
 <p className='copyrights'> 

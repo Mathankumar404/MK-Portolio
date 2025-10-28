@@ -1,13 +1,14 @@
 import "./Faq.css"
 
 import React, { useState } from 'react'
-
+import { motion } from "framer-motion"
 const Faq = () => {
      const questions=["What does a Frontend developer do?","Which technologies do you use?",
         "Can You Develop or Design Mobile Apps?","Do You Optimize websites for speed and SEO?",
         "Can you Customize designs or work with templates?"
     ]
-    const [plus,setplus]=useState(Array(questions.length).fill(false))
+    const [plus,setplus]=useState([true, ...Array(questions.length - 1).fill(false)]
+)
    
   
 const qaData = {
@@ -31,41 +32,52 @@ const handleplusminus=(i)=>{
    setplus((prev)=>prev.map((val,index)=>(i===index?!val:false)))
 }
   return (
-    <div className="FaqSection">
-      <div className="faqheadings">
+    <div id="FaqSection">
+      <div className="faqheadings"
+      >
         <span className="faqtitle">FAQ? </span>
         <span className="faqsubtitle">Frequently Asked Questions</span>
       </div>
       <div className="Faqboxes">
        
-      <div className="questionsBox">
+      <motion.div className="questionsBox"
+      
+        initial={{ opacity: 0, x: -200 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}>
         <ul className="questionslist">
           {questions.map((item,index)=>(
-            <>
+           <div key={index}>
        <li key={index} className="question" onClick={(e)=>handleplusminus(index,e)}>
       <span className={`plus ${plus[index]===true?"minus":''}`}   >{plus[index]===true?"-":"+"} </span> {item}
        </li>
       
        {plus[index]===true &&
-       <p key={index} className="answers">
+       <p  className="answers">
            {qaData[item]}
        </p>
 }
-        </>
+        </div>
 ))}
 </ul>
-      </div>
+      </motion.div>
 
-      <div className="faqMessagebox">
+      <motion.div className="faqMessagebox" 
+        initial={{ opacity: 0, x: 200 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}>
          <div className="messagediv">
            <img src="images/message.png" alt="messsageicon" className="messageicon"/>
            <span className="messagesubtitle">Do you have more questions? </span>
            <span className="messagepara">Didn’t find the answer you were looking for?
 Feel free to reach out,I’m here to help!</span>
-
+<a href="#contact">
 <button className="sendMessage"> Send a message</button>
+</a>
          </div>
-      </div>
+      </motion.div>
       </div>
     </div>
   )

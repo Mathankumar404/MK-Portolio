@@ -1,5 +1,6 @@
 import "./Services.css";
 import React from 'react'
+import { motion } from "framer-motion";
 
 const Services = () => {
 
@@ -15,16 +16,23 @@ const Services = () => {
   }
 
   return (
-    <div className="Myservices">
+    <div id="Myservices">
       <div className="servicesheading">
         <span className="servicetitle"> MY SERVICES</span>
        
         <span className="whatido">What I Do</span>
       </div>
       <br />
-       <div className="Services">
-        {images.map((item)=>(
-           <div className="service1">
+       {/* <div className="Services"> */}
+          <motion.div
+        className="Services"
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
+        {images.map((item,index)=>(
+           <div className="service1" key={index}>
                  <img src={`/images/${item}.png`} alt="service1" className="serviceimages"/>
                
                  <span className="serviceName">{item.replace("_"," ")}</span>
@@ -32,7 +40,7 @@ const Services = () => {
            </div>
            ))
 }
-       </div>
+      </motion.div>
     </div>
   )
 }

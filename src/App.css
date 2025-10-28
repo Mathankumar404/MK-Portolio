@@ -7,3 +7,18 @@ hr {
   border-radius: 5px;     /* optional: rounded edges */
 }
    
+div{
+  scroll-margin-top: 1.4vw;
+}
+#AboutMe{
+  scroll-margin-top: 5vw;
+}
+#contact{
+  scroll-margin-top: 6vw;
+}
+* {
+  user-select: none;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* IE10+ */
+}

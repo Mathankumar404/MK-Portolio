@@ -2,7 +2,7 @@ import React from 'react'
 import "./Hero.css"
 const Hero = () => {
   return (
-    <div className='hero'>
+    <div id='hero'>
         <div className='introduction'>
       <span className='welcome'>Welcome To My World</span>
       <h2 className="Iammathan">HI I'M <span className='name'>MATHANKUMAR</span> A DEVELOPER</h2>
@@ -19,12 +19,16 @@ const Hero = () => {
 
 
           <div className='Herobuttons'>
+            <a href="mailto:mathankvm123@gmail.com?subject=Hiring%20Inquiry&body=Hi%20Mathankumar,%20I%20would%20like%20to%20discuss%20a%20project%20with%20you." target='_blank'>
             <button className='Hireme'>
              Hire Me
             </button>
-            <button className='DownloadCV'>
+            </a>
+            <a  href="/assets/Mathankumar_cv.pdf" download={"Mathankumar_CV.pdf"} >
+            <button className='DownloadCV' >
               Download CV
             </button>
+            </a>
           </div>
       </div>
 

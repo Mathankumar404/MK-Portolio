@@ -1,32 +1,44 @@
-.Myservices{
+#Myservices{
 font-family: 'Montserrat';
  padding-top: 5vw;
-    padding-left: 4vw;
+   
+   
 }
 
 .servicetitle{
  color:#ED3038;
-   
+       font-family: 'Montserrat';
+
    font-size: 1vw;
 }
 .whatido{
    font-size: 2vw;
    font-weight: 600;
+       font-family: 'Montserrat';
+
 }
 .servicesheading{
     display: flex;
     flex-direction:column;
     gap: 5px;
+   font-family: 'Montserrat';
+   padding-left: 4vw;
+
 }
 .Services{
    display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
-   gap: 2vw;
+   width: 90%;
+grid-template-columns: repeat(3, 1fr);
+   /* column-gap: 1vw; */
+   gap: 3vw;
+   justify-self: center;
+   align-self: center;
+   place-items: center;
 }
 .service1{
     width: 22vw;
     height: 17vw;
-    border-radius: 15px;
+    border-radius: 1.7vw;
     background: linear-gradient(to bottom,#fcb4b9,rgb(255, 209, 209),white);
     box-shadow: 5px 5px 15px gray;
     display: flex;
@@ -42,6 +54,8 @@ font-family: 'Montserrat';
 .serviceName{
    font-size: 1.3vw;
 font-weight: 600;
+    font-family: 'Montserrat';
+
 /* font-family: 'Montserrat'; */
 }
 .servicedetail{
@@ -50,6 +64,8 @@ font-weight: 600;
    color: rgb(44, 42, 42);
    align-items: center;
    justify-self: center;
+   font-family: 'Montserrat';
+
 }
 @media(max-width:480px){
  

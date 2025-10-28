@@ -1,7 +1,7 @@
-.portfolio{
+#portfolio{
     font-family: 'Montserrat';
  padding-top:5vw;
-    padding-left: 4vw;
+    
 }
 .portfolioheadings{
     display: flex;
@@ -16,11 +16,17 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2vw;
-    margin-top: 2vw;
+    margin-top: 4vw;
+    place-items: center;
+    width: 90%;
+    justify-self: center;
+    align-self: center;
 }
 .visitmyportfolio{
     font-size: 2vw;
    font-weight: 600;
+       font-family: 'Montserrat';
+
 }
 
 .portfolioTitle{
@@ -32,22 +38,34 @@
 .Project{
     width: 23vw;
     height:16vw;
-    border-radius: 3vw;
+    border-radius: 1vw;
     display: flex;
-    align-items: end;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     box-shadow: 5px 5px 15px gray;
-    background: linear-gradient(to bottom,rgb(255, 186, 186),rgb(253, 227, 227),white,rgb(255, 253, 253),white);
+    background: linear-gradient(to bottom,rgb(245, 111, 111),rgb(209, 136, 136),rgb(235, 178, 178),rgb(255, 255, 255),rgb(255, 255, 255));
+   
+    /* background: linear-gradient(to bottom,rgb(255, 186, 186),rgb(253, 227, 227),white,rgb(255, 253, 253),white); */
 }
 
 .projectname{
     font-weight: 600;
     font-size:1vw;
-    padding-bottom: 1vw;
+       font-family: 'Montserrat';
+
     padding: 2vw;
+     padding-bottom: 0.5vw;
     display: flex;
     align-items: center;
-    
+    justify-content: center;
     
 }
 
+.projectimage{
+
+    width:90%;
+    height:60%;
+    border-radius: 0.3vw;
+
+}

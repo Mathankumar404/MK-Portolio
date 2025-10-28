@@ -1,4 +1,4 @@
-.AboutMe{
+#AboutMe{
     display: flex;
     margin-top: 1vw;
 
@@ -8,6 +8,7 @@
     width:50vw;
     height: 25vw;
     padding: 4vw;
+    padding-bottom: 2vw
 
 }
 .About{
