@@ -150,7 +150,8 @@ padding: 2vw;
 height: auto;
 justify-content: center;
 align-items: center;
-display: flex;
+display: none;
+
 }
 .question{
     font-size: 2vw;

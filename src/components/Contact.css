@@ -110,7 +110,10 @@ font-size: 1vw;
 display: flex;
 flex-direction: row;
 gap: 2vw;
-
+user-select:text;
+}
+.contactdetails img{
+    user-select: none;
 }
 .sendmessagebtn{
     background-color:#ED3038;
@@ -123,7 +126,10 @@ gap: 2vw;
   border-radius: 0.2vw;
   font-family: 'Montserrat';
 }
-
+.sendmessagebtn:active{
+    /* opacity: 0.9; */
+    transform: scale(0.99);
+}
 @media(max-width:480px){
     .contacttitle, .letstalk{
         font-size: 2vw;
@@ -138,26 +144,48 @@ gap: 2vw;
         width: 4vw;
         height: 4vw;
     }
+    .letstalkContanier{
+        padding-left: 4vw;
+    }
   .letstalkimage{
     width: 100%;
     height: 50%;
   }
+   .contactform{
+  
+    gap: 3vw;
+    padding-right: 0vw;
+   
+
+}
   .contactform input{
-    width: 30vw;
-    height: 1.5vw;
-    border-radius: 0.5vw;
-    font-size: 1.5vw;
-    padding: 0.5vw;
+    width: 35vw;
+    height: 3vw;
+    border-radius: 1vw;
+    font-size: 2vw;
+    padding: 1vw;
 }
 .contactform textarea{
-    font-size: 1.5vw;
-    padding: 0.5vw;
-    border-radius:0.5vw;
+    height:8vw;
+    font-size: 2vw;
+    padding: 1vw;
+    border-radius:1vw;
+    width: 35vw;
+    height: 10vw;
+    max-width: 40vw;
+    max-height: 20vw;
+   
+    
 }
 .sendmessagebtn{
     font-size: 2vw;
     padding: 1vw;
     height: 4vw;
    border-radius: 1vw;
+   width:35vw;
 }
+.sendmessagebtn:active{
+transform: scale(0.9);
+}
+
 }

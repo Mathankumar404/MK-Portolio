@@ -21,7 +21,7 @@ a{
     display: flex;
     gap:0.9vw;
     padding-left: 2vw;
-   
+   cursor: pointer;
 }
 #header{
     display: flex;
@@ -180,12 +180,14 @@ color: #000000;
   background-color: rgb(255, 255, 255);
  margin-top: -0.5vw;
  width: 35vw;
+ /* height:60vw; */
  padding:2vw;
+ /* padding-right: 15vw; */
   border-radius: 5px;
   box-shadow: 5px 5px 15px gray;
-  margin-right: 0vw;
+  
   opacity: 1;
- 
+  
 
 }
 .dropdownmenuContainer{
@@ -193,6 +195,7 @@ color: #000000;
   transform: translateX(500px);
   transition: all 0.5s ease;
  z-index: 1;
+ 
 }
 
 .dropdownmenuContainer.show {
@@ -200,7 +203,7 @@ color: #000000;
   transform: translateX(1vw);
 }
 
-.dropdown  li{
+.dropdown li{
     padding: 1vw 2vw;
   display: flex;
   justify-content: flex-start;
@@ -215,8 +218,10 @@ color: #000000;
   }
 
  .dropdown a{
+  width: 100%;
   text-decoration: none;
   color: #000000;
+ 
 
  }
 
